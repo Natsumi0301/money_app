@@ -14,7 +14,7 @@ with st.container():
     def title():
         st.title('（仮）お金の大切さを学ぼう')
         st.write('はたらいてゲットしたお金を、きみはどうつかう？')
-        st.image('https://drive.google.com/file/d/1YB5fhYOXfBJofl1n69odRpfD_ExeAWca/view?usp=sharing', width=500)
+        st.image('image/title.png', width=500)
         st.button('スタート', on_click = change_page_to_job_select)
     
     #ジョブ選択に遷移するためのsession_stateの設定
@@ -26,15 +26,15 @@ with st.container():
         st.header('おしごとをえらぼう！')
         col1, col2, col3 = st.columns(3)
         with col1:
-            st.image("https://drive.google.com/file/d/1RW1i660tzcOa4eS8xMv1qoO_2dmxFUmi/view?usp=sharing",width=200)
+            st.image("image/driver.png",width=200)
             st.write("バスのうんてんしゅ")
             st.button("このおしごとにする！", key="driver",on_click = change_page_to_bus_driver)
         with col2:
-            st.image("https://drive.google.com/file/d/1YnAxQRPv7sA9pO_InTMVVE1m_tHXEAqi/view?usp=sharing",width=200)
+            st.image("image/writer.png",width=200)
             st.write("しょうせつか")
             st.button("このおしごとにする！", key="writer",on_click = change_page_to_writer)
         with col3:
-            st.image("https://drive.google.com/file/d/1wxbPecHLYbc1vjJfmbG2aIUdGMnK6YcK/view?usp=sharing",width=200)
+            st.image("image/staff.png",width=200)
             st.write("ハンバーガーやさん")
             st.button("このおしごとにする！", key="staff",on_click = change_page_to_shop_staff)
 
@@ -66,7 +66,7 @@ with st.container():
     def get_money():
         st.header('おきゅうりょう日！')
         st.write('おしごとして　お金をゲットしたよ！')
-        st.image('https://drive.google.com/file/d/11qsthnhQurvZHiI-pkFwXeF0GQ02vhpR/view?usp=sharing', width=500)
+        st.image('image/get_money.png', width=500)
         st.button('つぎへ', on_click=change_page_to_how_to_use_money)
 
     #お金の使い方画面のためのsession_stateの設定
@@ -78,15 +78,15 @@ with st.container():
         st.header('お金のつかいかたを　えらぼう！')
         col1, col2, col3 = st.columns(3)
         with col1:
-            st.image("https://drive.google.com/file/d/1RW1i660tzcOa4eS8xMv1qoO_2dmxFUmi/view?usp=sharing",width=200)
+            st.image("image/title.png",width=200)
             st.write("浪費パターン")
             st.button("これにする！", key="pattern1",on_click = change_page_to_pattern1)
         with col2:
-            st.image("https://drive.google.com/file/d/1RW1i660tzcOa4eS8xMv1qoO_2dmxFUmi/view?usp=sharing",width=200)
+            st.image("image/title.png",width=200)
             st.write("経験パターン")
             st.button("これにする！", key="pattern2",on_click = change_page_to_pattern2)
         with col3:
-            st.image("https://drive.google.com/file/d/1RW1i660tzcOa4eS8xMv1qoO_2dmxFUmi/view?usp=sharing",width=200)
+            st.image("image/title.png",width=200)
             st.write("貯金パターン")
             st.button("これにする！", key="pattern3",on_click = change_page_to_pattern3)
     
