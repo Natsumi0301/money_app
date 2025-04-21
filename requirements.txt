@@ -1,1 +1,6 @@
 streamlit
+openai
+python-dotenv
+gTTS
+audio-recorder-streamlit
+Pillow
